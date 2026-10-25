@@ -1,4 +1,5 @@
 {
   "block.landmine.landmine": "地雷",
-  "item.landmine.landmine": "地雷"
+  "item.landmine.landmine": "地雷",
+  "itemGroup.landmine": "地雷模组"
 }

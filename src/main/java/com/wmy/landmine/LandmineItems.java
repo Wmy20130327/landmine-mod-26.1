@@ -3,18 +3,18 @@ package com.wmy.landmine;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class LandmineItems {
     public static final Item LANDMINE = register("landmine",
-            new BlockItem(LandmineBlocks.LANDMINE, new Item.Properties()));
+            new LandmineItem(LandmineBlocks.LANDMINE, new Item.Properties()));
 
     public static final CreativeModeTab LANDMINE_GROUP =
             CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                     .title(net.minecraft.network.chat.Component.translatable("itemGroup.landmine"))
-                    .icon(() -> new net.minecraft.world.item.ItemStack(LANDMINE))
+                    .icon(() -> new ItemStack(LANDMINE))
                     .displayItems((params, output) -> output.accept(LANDMINE))
                     .build();
 
