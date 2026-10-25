@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "landmine",
+  "version": "${version}",
+  "name": "Landmine Mod 地雷模组",
+  "description": "给 Minecraft 26.1 添加可踩踏触发的地雷方块。",
+  "authors": ["Wmy20130327"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.wmy.landmine.LandmineMod"],
+    "client": ["com.wmy.landmine.LandmineModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19",
+    "minecraft": "~26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
