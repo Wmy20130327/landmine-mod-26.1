@@ -1,4 +1,5 @@
 {
   "block.landmine.landmine": "Landmine",
-  "item.landmine.landmine": "Landmine"
+  "item.landmine.landmine": "Landmine",
+  "itemGroup.landmine": "Landmine Mod"
 }
